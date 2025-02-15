@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            width: 50%;
+            height: 500px;
+            border: 1px solid black;
+            margin: 20px auto;
+        }
+        .box {
+            height: 100px;
+            width: 200px;
+            background-color: orange;
+        }
+        .margin {
+            margin: 20px;
+        }
+        .relative {
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+        .relative-container {
+            position: relative;
+        }
+        .absolute {
+            position: absolute;
+            top: 200px;
+            left: 50px;
+        }
+        .fixed {
+            position: fixed;
+            bottom: 20px;
+            left: 20px; /*Ustawione w jednym miejscu ekranu 20px od dułu i lewej*/
+        }
+        .sticky {
+            position: sticky;
+            top: 20px; /*Okienko zjeżdza w dół wraz z ruchem myszki do końca boxa*/
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box sticky">Sticky</div>
+    </div>
+    <div class="container">
+        <div class="box margin">Static</div>
+        <div class="box margin relative">Relative</div>
+        <div class="box margin">Static</div>
+    </div>
+    <div class="container relative-container">
+        <div class="box absolute">Absolute</div>
+    </div>
+
+    <div class="box fixed">Fixed</div>
+
+</body>
+</html>
