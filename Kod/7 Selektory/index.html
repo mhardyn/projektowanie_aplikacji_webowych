@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selektory</title>
+    <link rel="stylesheet" href="template.css">
+    <style>
+        /*Wszystkie elementy*/
+        /** {*/
+        /*    border: 3px solid blue;*/
+        /*}*/
+
+        /*Typy*/
+        /*div {*/
+        /*    border: 3px solid blue*/
+        /*}*/
+
+        /*ID*/
+        /*#box-one {*/
+        /*    border: 3px solid blue*/
+        /*}*/
+
+        /*Class*/
+        /*.boxes {*/
+        /*    border: 3px solid blue*/
+        /*}*/
+
+        /*Dziecko*/
+        /*#big-box > div {*/
+        /*    border: 3px solid blue*/
+        /*}*/
+
+        /*Potomek*/
+        /*#big-box div {*/
+        /*    border: 3px solid blue*/
+        /*}*/
+
+        /*Sąsiad bezpośredni*/
+        /*#box-two + div {*/
+        /*    border: 3px solid blue*/
+        /*}*/
+
+        /*Sąsiad*/
+        /*#box-two ~ div {*/
+        /*    border: 3px solid blue*/
+        /*}*/
+
+    </style>
+</head>
+<body>
+
+  <div id="box-one"></div>
+  <div class="boxes"></div>
+
+  <div id="big-box">
+      <div></div>
+      <div id="box-two">
+          <div></div>
+      </div>
+      <div></div>
+      <div class="boxes"></div>
+  </div>
+
+</body>
+</html>
