@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let numericArray = [1, 2, 3];
+        let textArray = ['one', 'two', 'three'];
+        let booleanArray = [true, false, true];
+        let mixArray = [1, 'two', true];
+
+        console.log(numericArray);
+        console.log(textArray);
+        console.log(booleanArray);
+        console.log(mixArray);
+
+        console.log(typeof numericArray);
+
+        console.log('--------------------');
+
+        console.log('Trzeci element z tablicy textArray');
+        console.log(textArray[2]);
+
+        console.log('Pierwszy element z tablicy numericArray');
+        let numVal = numericArray[0];
+        console.log(numVal);
+
+        console.log('Tablica numericArray po modyfikacji');
+        numericArray[0] = 100;
+        console.log(numericArray);
+
+        console.log('Element spoza zakresu');
+        console.log(numericArray[-1]);
+
+        console.log('Czy tablica zawiera liczbę 3?');
+        console.log(numericArray.includes(3));
+
+        console.log('Czy tablica zawiera liczbę 4?');
+        console.log(numericArray.includes(4));
+
+        textArray.push('four');
+        console.log(textArray);
+
+
+
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>

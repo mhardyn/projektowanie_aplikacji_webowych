@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #element-one, #element-two {
+            width: 500px;
+            height: 200px;
+            margin: 50px;
+            background-color: lightgrey;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+
+            setTimeout(function (){
+                document.getElementById('element-one').textContent = 'Nowa wartość';
+                document.getElementById('element-two').innerHTML = '<b>Pogrubiony tekst</b>';
+            }, 5000);
+        }
+    </script>
+
+</head>
+<body>
+
+    <div id="element-one"></div>
+    <div id="element-two"></div>
+
+</body>
+</html>
